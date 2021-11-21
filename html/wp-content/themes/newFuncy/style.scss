@@ -14,14 +14,51 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-body {
-  background-color: #0d66c2;
+@mixin tema($color : #b2c){
+  background-color: $color;
 }
 
-.morado {
-  background-color: #ff00cf;
+@mixin bordes(){
+  border: 5px dashed #0c0c0c;
+  border-collapse: collapse;
+}
+
+.main {
+  background-image: linear-gradient(to bottom, #0d66c2, #e1e1e1);
+  background-repeat: no-repeat;
+  .prueba {
+    @include tema;
+    text-align: center;
+  }
+}
+
+.texto {
+  @include bordes;
+}
+
+.red {
+  text-align: center;
 }
 
 .verde {
   background-color: #00a32a;
 }
+
+.error {
+  background-image: url("./images/background-red.jpg");
+  text-align: center;
+  margin: 0;
+}
+.eg {
+  background-image: linear-gradient(to left, red, blue, yellow, violet, indigo, green, orange, pink, blue, red);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.boton {
+  margin: 40px;
+  padding: 20px;
+  font-family: "Franklin Gothic Medium";
+  background-color: #1da1f2;
+}
+
