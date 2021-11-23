@@ -55,10 +55,53 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-background-clip: text;
 }
 
+#imagenes {
+  position: relative;
+
+  .gif3 {
+    position: absolute;
+    width: 10%;
+    top: 170px;
+    left: 35%;
+  }
+  .gif4 {
+    position: absolute;
+    width: 10%;
+    top: 170px;
+    right: 35%;
+  }
+}
+
+#pegado {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to bottom, blue, #02e49b, #02e49b, white, white);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
 .boton {
   margin: 40px;
   padding: 20px;
-  font-family: "Franklin Gothic Medium";
+  font-family: "Franklin Gothic Medium", serif;
+  color: #FFFFFF;
   background-color: #1da1f2;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  color: #02e49b;
+}
+
+.footer2 {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 100px;
+
 }
 

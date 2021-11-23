@@ -1,5 +1,5 @@
 <?php
 
-echo "<h1 class='morado'>New Funcy</h1>"
+echo "<h1 class='red'>New Funcy</h1>"
 
 ?>

@@ -21,9 +21,15 @@ get_header();
 <div>
     <h1>Mira, mi pagina esta totalmente actualizada</h1>
     <h1>Asi que deja de buscar <span class="eg">easter eggs</span> porque no vas a <a href="<?php echo get_stylesheet_directory_uri() ?>/images/middle_finger.gif">encontrar</a> nada</h1>
+    <h1 id="pegado">Pesado</h1>
     <img class="gif" src="<?php echo get_stylesheet_directory_uri() ?>/images/rotate_head.gif">
     <h1>Ahora haz el favor de hacer algo productivo con tu dinero y dona algo a la comunidad de gamers de Touhou</h1>
-    <img class="gif2" src="<?php echo get_stylesheet_directory_uri() ?>/images/give-me-money.gif">
+    <div id="imagenes">
+        <img class="gif2" src="<?php echo get_stylesheet_directory_uri() ?>/images/give-me-money.gif">
+        <img class="gif3" src="<?php echo get_stylesheet_directory_uri() ?>/images/marisa-neko.gif">
+        <img class="gif4" src="<?php echo get_stylesheet_directory_uri() ?>/images/marisa-neko.gif">
+    </div>
+
     <br>
     <br>
     <form action="https://www.paypal.com/es/home" target="_blank">
@@ -34,6 +40,16 @@ get_header();
 
 
 </div>
+<?php
+/**
+ * The template for displaying the 404 template in the New Funcy theme.
+ *
+ * @package WordPress
+ * @subpackage New_Funcy
+ * @since New Funcy 0.2
+ */
 
+get_footer();
+?>
 </body>
 </html>
